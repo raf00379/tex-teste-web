@@ -1,0 +1,94 @@
+<html>
+    <head>
+<title>Testando código inicial</title>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    
+<script src="https://rawgit.com/makeusabrew/bootbox/f3a04a57877cab071738de558581fbc91812dce9/bootbox.js"></script>
+
+</head>
+<script>
+  function deletar(classe)
+  {
+  	bootbox.confirm("Voce deseja realmente apagar esse registro?", function(result) {
+        if (result) {
+           $(classe).remove();
+        } 
+     });
+  }     
+        
+</script>
+<body> 
+	
+		<table class="table table-hover">
+		
+		<thead>
+			<th>  </th>
+			<th>Primeiro Nome</th>
+			<th>Último Nome</th>
+			<th>Email</th>
+			<th>Contato</th>
+			<th>Editar</th>
+			<th>Deletar</th>
+			
+		</thead>
+		<tbody>
+			<tr id="linha1">
+				<td><input type="checkbox" name="cel1" /></td>
+				<td>Manuel</td>
+				<td>da Costa</td>
+				<td>manuel@gmail.com</td>
+				<td>119786-6667</td>
+				<td><a href="form.html"><i class="glyphicon glyphicon-edit" ></i></a></td>
+				<td><a href="#"><i class="glyphicon glyphicon-trash" onclick="deletar(linha1)"></i></a></td>
+				
+			</tr>
+			<tr id="linha2">
+				<td><input type="checkbox" name="cel2" /></td>
+				<td>Manuel</td>
+				<td>da Costa</td>
+				<td>manuel@gmail.com</td>
+				<td>119786-6667</td>
+				<td><a href="form.html"><i class="glyphicon glyphicon-edit" ></i></a></td>
+				<td><a href="#"><i class="glyphicon glyphicon-trash" onclick="deletar(linha2)"></i></a></td>
+				
+			</tr>
+			<tr id="linha3">
+				<td><input type="checkbox" name="cel3" /></td>
+				<td>Manuel</td>
+				<td>da Costa</td>
+				<td>manuel@gmail.com</td>
+				<td>119786-6667</td>
+				<td><a href="form.html"><i class="glyphicon glyphicon-edit" ></i></a></td>
+				<td><a href="#"><i class="glyphicon glyphicon-trash" onclick="deletar(linha3)"></i></a></td>
+				
+			</tr>
+			<tr id="linha4">
+				<td><input type="checkbox" name="cel4" /></td>
+				<td>Manuel</td>
+				<td>da Costa</td>
+				<td>manuel@gmail.com</td>
+				<td>119786-6667</td>
+				<td><a href="form.html"><i class="glyphicon glyphicon-edit" ></i></a></td>
+				<td><a href="#"><i class="glyphicon glyphicon-trash" onclick="deletar(linha4)"></i></a></td>
+				
+			</tr>
+			<tr id="linha5">
+				<td><input type="checkbox" name="cel5" /></td>
+				<td>Manuel</td>
+				<td>da Costa</td>
+				<td>manuel@gmail.com</td>
+				<td>119786-6667</td>
+				<td><a href="form.html"><i class="glyphicon glyphicon-edit" ></i></a></td>
+				<td><a href="#"><i class="glyphicon glyphicon-trash" onclick="deletar(linha5)"></i></a></td>
+				
+			</tr>
+		</tbody>
+		</table>
+		
+	
+</body>
+</html>
